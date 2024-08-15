@@ -1,0 +1,112 @@
+<mxfile host="app.diagrams.net" modified="2024-06-15T21:01:19.683Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="SnGXgkXqC05X8e8NU6OK" version="24.5.4" type="device">
+  <diagram name="第 1 页" id="ztYxtRsQfPeP5I2pO8FB">
+    <mxGraphModel dx="945" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LdSCU7jo_EDFc6S9GLo3-1" target="LdSCU7jo_EDFc6S9GLo3-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LdSCU7jo_EDFc6S9GLo3-1" target="LdSCU7jo_EDFc6S9GLo3-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LdSCU7jo_EDFc6S9GLo3-1" target="LdSCU7jo_EDFc6S9GLo3-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-1" value="創建任務node" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="28" y="140" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LdSCU7jo_EDFc6S9GLo3-4" target="LdSCU7jo_EDFc6S9GLo3-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-4" value="定義Subscriber並訂閱：&lt;div&gt;mavros/state（狀態資訊）&lt;/div&gt;&lt;div&gt;mavros/local_position/pose（位置資訊）&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="148" y="60" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LdSCU7jo_EDFc6S9GLo3-5" target="LdSCU7jo_EDFc6S9GLo3-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="428" y="160.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-5" value="定義Publisher用於發布：&lt;div&gt;mavros/setpoint_velocity/pose（速度控制）&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="148" y="130" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LdSCU7jo_EDFc6S9GLo3-6" target="LdSCU7jo_EDFc6S9GLo3-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-6" value="設置Service proxy：&lt;div&gt;mavros/set_mode（設定系統狀態）&lt;/div&gt;&lt;div&gt;mavros/cmd/arming（上/解鎖）&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="148" y="200" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LdSCU7jo_EDFc6S9GLo3-10" target="LdSCU7jo_EDFc6S9GLo3-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-10" value="初始化PID控制器參數" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="583" y="400" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LdSCU7jo_EDFc6S9GLo3-12" target="LdSCU7jo_EDFc6S9GLo3-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-12" value="設定飛行模式 OFFBOARD&lt;div&gt;設定arming為True 解鎖&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="568" y="230" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="LdSCU7jo_EDFc6S9GLo3-14" target="LdSCU7jo_EDFc6S9GLo3-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LdSCU7jo_EDFc6S9GLo3-14" target="LdSCU7jo_EDFc6S9GLo3-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-14" value="成功？" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="618" y="140" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-18" value="檢查無人機是否連接成功" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="418" y="130" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="LdSCU7jo_EDFc6S9GLo3-18" target="LdSCU7jo_EDFc6S9GLo3-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-28" value="失敗" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="543" y="98" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-31" value="成功" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="679" y="138" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="LdSCU7jo_EDFc6S9GLo3-32" target="LdSCU7jo_EDFc6S9GLo3-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LdSCU7jo_EDFc6S9GLo3-32" target="LdSCU7jo_EDFc6S9GLo3-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="758" y="340" />
+              <mxPoint x="758" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-32" value="成功？" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="618" y="320" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-37" value="成功" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="638" y="360" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LdSCU7jo_EDFc6S9GLo3-38" target="LdSCU7jo_EDFc6S9GLo3-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="399" y="499.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-38" value="PID控制器&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%E5%88%9D%E5%A7%8B%E5%8C%96PID%E6%8E%A7%E5%88%B6%E5%99%A8%E5%8F%83%E6%95%B8%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BabsoluteArcSize%3D1%3BarcSize%3D14%3BstrokeWidth%3D2%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22735%22%20y%3D%22320%22%20width%3D%22130%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="408" y="400" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LdSCU7jo_EDFc6S9GLo3-41" target="LdSCU7jo_EDFc6S9GLo3-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-41" value="發送速度命令&lt;div&gt;mavros/setpoint_velocity/pose&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="209" y="400" width="169" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-42" value="無人機到達終點" style="whiteSpace=wrap;html=1;rounded=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="58" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LdSCU7jo_EDFc6S9GLo3-35" value="失敗" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="748" y="280" width="50" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

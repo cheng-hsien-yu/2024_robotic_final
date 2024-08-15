@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<launch>
+	<arg name="node_start_delay" default="18"/>
+
+	<env name="GAZEBO_MODEL_PATH" value="${GAZEBO_MODEL_PATH}:$(find 2024_final)/models"/>
+	<env name="GAZEBO_RESOURCE_PATH" value="${GAZEBO_RESOURCE_PATH}:$(find 2024_final)/models"/>
+	
+	<!-- Include the MAVROS node with SITL and Gazebo -->
+	<include file="$(find 2024_final)/launch/iris_sitl.launch">
+		 <arg name="world" default="$(find 2024_final)/world/final.world"/>
+	</include>
+	<include file="$(find apriltag_ros)/launch/continuous_detection.launch">
+
+	</include>
+
+	<!-- Our node to control  drone -->
+	<node pkg="2024_final" type="setpoint_node.py" name="setpoint_node_py" required="true" output="screen" />
+	<node pkg="2024_final" type="UKF.py" name="ukf_estimation_node" required="true" output="screen" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' "/>
+	<node pkg="2024_final" type="data_record.py" name="data_saver_node" required="true" output="screen" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' "/>
+
+</launch>

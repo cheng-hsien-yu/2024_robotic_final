@@ -1,0 +1,2 @@
+2024_robotics:apriltag_ros/apriltag_ros
+-DCATKIN_DEVEL_PREFIX=/home/hsien/robotic_final_project/devel -DCMAKE_INSTALL_PREFIX=/home/hsien/robotic_final_project/install -G Unix Makefiles
